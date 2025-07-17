@@ -9,6 +9,9 @@ pytesseract.pytesseract.tesseract_cmd = r'E:\Python\Tesseract\tesseract.exe'
 
 isEscaped = False
 
+# Add this line to allow moving the window
+cv2.namedWindow("Screen Capture", cv2.WINDOW_NORMAL)
+
 while True: 
     #left, top, right, bottom
     img = ImageGrab.grab(bbox=(970, 260, 1060, 285))
